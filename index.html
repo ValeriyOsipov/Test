@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body onload="getData()">
+    <div onclick = "hideCard()" id="shade" style="display: none;"></div>
+    <h1>List of Users</h1>
+    <select name="Sort" onchange="if (this.selectedIndex) selectSort(this);">
+        <option value="Select" hidden disabled selected>Select sort Type</option>
+        <option value="AZ">Alphabetical order</option>
+        <option value="ZA">Reverse alphabetical order</option>
+    </select>
+    <div id="usersListDiv"></div>
+    <div id="usersCardsDiv"></div>
+    <script src="main.js"></script>
+</body>
+</html>
